@@ -1,0 +1,72 @@
+
+
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/mulish-v13-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mulish-v13-latin-700.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+
+body {
+  font-weight: 500;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Mulish";
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgba(204, 204, 204, 0.5);
+  padding: 15px 25px;
+  border-radius: 12px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+}
+
+.container:hover {
+  box-shadow: -1px 7px 25px 13px rgba(30, 6, 6, 0.37);
+  transform: scale(1.005);
+}
+.container:active {
+  box-shadow: -4px 2px 10px 3px rgba(20, 4, 4, 0.25);
+  transform: scale(1);
+}
+.container h1 {
+  font-weight: 700;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 60px;
+}
+
+@media (max-width: 460px) {
+  .container h1 {
+    font-size: 22px;
+  }
+}
